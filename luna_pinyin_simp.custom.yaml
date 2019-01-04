@@ -9,11 +9,11 @@
 # 雙拼用戶請使用 double_pinyin.custom.yaml。
 #
 # 附朙月拼音系列方案與其對應的 id 一覽表：
-# 輸入方案	id
-# 朙月拼音	luna_pinyin
-# 朙月拼音·简化字	luna_pinyin_simp
-# 朙月拼音·臺灣正體	luna_pinyin_tw
-# 朙月拼音·語句流	luna_pinyin_fluency
+# 輸入方案    id
+# 朙月拼音    luna_pinyin
+# 朙月拼音·简化字    luna_pinyin_simp
+# 朙月拼音·臺灣正體    luna_pinyin_tw
+# 朙月拼音·語句流    luna_pinyin_fluency
 
 patch:
   switches:
@@ -22,8 +22,6 @@ patch:
       states: ["中文", "西文"]
     - name: full_shape
       states: ["半角", "全角"]
-      #    - name: extended_charset  #生僻字开关
-      #      states: ["通用", "增廣"]
     - name: zh_simp                      # (※1) 繁简转换
       reset: 1
       states: ["漢字", "汉字"]
@@ -40,16 +38,12 @@ patch:
       states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
 
 
-  engine:
-    filters:
+  engine/filters:
       - simplifier
       - simplifier@emoji_conversion
       - uniquifier
       - charset_filter@gbk              # (※3) GBK 过滤
       - single_char_filter
-        #      - cjk_minifier
-        #    translator:
-        #      enable_charset_filter: true #启用罕见字過濾
 
   emoji_conversion:
     opencc_config: emoji.json
