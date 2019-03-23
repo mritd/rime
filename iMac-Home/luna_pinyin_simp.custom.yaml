@@ -27,7 +27,7 @@ patch:
       states: ["繁体", "简体"]
     - name: ascii_punct
       states: ["。，", "．，"]
-    - options: ["utf8", "gbk", "gb2312"] # (※2)字符集选单
+    - options: ["gbk", "utf8", "gb2312"] # (※2)字符集选单
       reset: 0                           #     默认 UTF8
       states:
         - UTF-8
