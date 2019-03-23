@@ -1,5 +1,4 @@
 .DS_Store
 
 build
-luna_pinyin.userdb
-easy_en.userdb
+*/*userdb*

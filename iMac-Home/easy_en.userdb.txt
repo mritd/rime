@@ -1,6 +1,0 @@
-# Rime user dictionary
-#@/db_name	easy_en.userdb
-#@/db_type	userdb
-#@/rime_version	1.3.2
-#@/tick	0
-#@/user_id	iMac-Home
