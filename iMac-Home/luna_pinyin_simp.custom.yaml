@@ -30,8 +30,8 @@ patch:
     - options: ["gbk", "utf8", "gb2312"] # (※2)字符集选单
       reset: 0                           #     默认 UTF8
       states:
-        - UTF-8
         - GBK
+        - UTF-8
         - GB2312
     # - name: emoji_suggestion
     #   reset: 1
