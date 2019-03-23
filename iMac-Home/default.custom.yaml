@@ -27,7 +27,7 @@ patch:
       - zh_hans
       - zh_hant_tw
 
-  # capslock 键切换英文并输出小写
+  # capslock 键切换英文并输出大写
   ascii_composer/good_old_caps_lock: true
   # 输入法中英文状态快捷键
   ascii_composer/switch_key:

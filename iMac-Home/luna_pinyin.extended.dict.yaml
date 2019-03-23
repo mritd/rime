@@ -46,6 +46,7 @@ import_tables:
   - luna_pinyin.sougou
   - luna_pinyin.poetry
   - luna_pinyin.cn_en
+  - luna_pinyin.kaomoji
 ...
 
 
